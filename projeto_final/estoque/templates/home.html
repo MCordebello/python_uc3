@@ -2,9 +2,91 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Página Inicial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Eletrônicos Senac</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo do cabeçalho */
+        .cabecalho {
+            background-color: #003366; /* Azul escuro para o fundo do cabeçalho */
+            color: #007bff; /* Azul para o texto do título */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cabecalho h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Estilo da barra de navegação */
+        .barra-opcoes {
+            background-color: #f1f1f1;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .barra-opcoes a {
+            display: inline-block;
+            color: #555;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .barra-opcoes a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        /* Estilo do corpo do site */
+        .corpo {
+            background-color: #ffffff; /* Fundo branco */
+            padding: 20px;
+            min-height: 400px; /* Altura mínima para o corpo */
+        }
+        
+        /* Estilo do rodapé */
+        .rodape {
+            background-color: #003366; /* Faixa azul */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
-    <h1>Oi</h1>
+
+    <header class="cabecalho">
+        <h1>Loja de Eletrônicos Senac</h1>
+    </header>
+
+    <nav class="barra-opcoes">
+        <a href="#">Produtos</a>
+        <a href="#">Notícias</a>
+        <a href="#">Carrinho</a>
+    </nav>
+
+    <main class="corpo">
+        <h2>Conteúdo do Site</h2>
+        <p>
+            Este é o corpo do site, onde você pode adicionar e editar o conteúdo da sua loja. Você pode inserir uma lista de produtos,
+            destaques, ou qualquer outro texto que desejar. Este texto é apenas um exemplo e pode ser facilmente substituído.
+        </p>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025</p>
+    </footer>
+
 </body>
-</html>     
+</html>
