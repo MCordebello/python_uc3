@@ -1,0 +1,26 @@
+{% extends 'estoque/base.html' %}
+{% load crispy_forms_tags static %}
+{% block title%}Estoque - Loja de Eletronicos{% endblock %}
+
+{% block content %}
+<h1> {{ view_title }} </h1>
+{% form method="post" enctype="multipart/form-data" %}
+
+{% csrf_token %}
+{{ form | crispy }}
+
+{% crispy form %}
+
+<button type="submit" class="btn btn-primary">Salvar</button>
+<a href="{% URL 'ESTOQUE:categoria_list' %}"
+    class="btn btn-secondary">Cancelar</a>
+
+</forms>
+{%endblock%}
+
+
+
+
+
+
+pip install django-crispy-forms crispy-bootstrap4 crispy-bootstrap5
